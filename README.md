@@ -60,3 +60,7 @@ cd ..
 `npm run dev`
 
 ➡ Démarre à la fois le backend et le frontend.
+
+---
+
+(! TODO: étape API OpenWeather à rédiger)

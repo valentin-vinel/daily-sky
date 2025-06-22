@@ -1,8 +1,9 @@
 import { Router } from "express";
+import * as mainController from "../controllers/mainController.js";
 
 export const router = Router();
 
-// router.use()
+router.get("/notes", mainController.home);
 // router.use()
 
 // Middleware erreur centralisé

@@ -2,7 +2,7 @@ import "dotenv/config";
 import express from "express";
 import path from "node:path";
 import cors from "cors";
-// import { router } from "./app/routes/router";
+import { router } from "./app/routes/router.js";
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 	res.send("Hello World!");
 });
 
-// app.use(router);
+app.use(router);
 
 app.listen(port, () => {
 	console.log(`App listening on port ${port}`);
