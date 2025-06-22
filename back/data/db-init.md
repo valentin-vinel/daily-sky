@@ -14,5 +14,5 @@ Une fois la BDD mise en place, nous pouvons effectuer les migrations:
 - ```npm db:create```
 - ```npm db:seed```
 
-Si nous voulons réinitialiser les données de la BDD:
+Ou:
 - ```npm db:reset```

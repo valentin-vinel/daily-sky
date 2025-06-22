@@ -1,0 +1,32 @@
+{
+	"name": "daily-sky",
+	"version": "1.0.0",
+	"description": "> App web full-stack: journal météo avec notes quotidiennes.",
+	"main": "index.js",
+	"scripts": {
+		"install": "npm install --prefix back",
+		"postinstall": "npm install --prefix front --include=dev",
+		"start": "npm run start --prefix back",
+		"dev": "concurrently \"npm run dev:back\" \"npm run dev:front\"",
+		"dev:back": "npm run dev --prefix back",
+		"dev:front": "npm run dev --prefix front",
+		"db:create": "npm run db:create --prefix back",
+		"db:seed": "npm run db:seed --prefix back",
+		"db:reset": "npm run db:create --prefix back && npm run db:seed --prefix back",
+		"build": "npm run build --prefix front"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/valentin-vinel/daily-sky.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/valentin-vinel/daily-sky/issues"
+	},
+	"homepage": "https://github.com/valentin-vinel/daily-sky#readme",
+	"dependencies": {
+		"concurrently": "^9.1.2"
+	}
+}
