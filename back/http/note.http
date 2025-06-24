@@ -1,5 +1,28 @@
 ###
 # GET home page
 GET http://localhost:3000/notes
-Accept: application/json
+Content-Type: application/json
+###
+
+###
+# POST login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "jules@test.test",
+    "password": "abcd1234"
+}
+###
+
+###
+# POST register
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username": "Mario",
+    "email": "mario@test.test",
+    "password": "abcd1234"
+}
 ###

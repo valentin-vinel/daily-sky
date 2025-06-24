@@ -1,3 +1,5 @@
+// Je gèrerai les appels à l'API publique et l'affichage des données directement côté front
+
 import "dotenv/config";
 import axios from "axios";
 
